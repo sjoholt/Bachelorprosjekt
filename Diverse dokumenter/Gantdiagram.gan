@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Web-basert notearkiv for korps og band. Bachelor 2017. " company="" webLink="http://" view-date="2017-01-03" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="en_US">
+    <description><![CDATA[En stor utfordring i ethvert korps (barne/undom/voksen) og storband (og øvrige band for den del) er håndteringen av noter. Den vanligste måten å håndtere noter i dag på, er i form av papir som deles ut til musikerne/utøverne, og som så samles inn igjen når de ikke skal brukes lenger.
+
+Stadig flere korps og band begynner nå å håndtere sine notearkiv elektronisk ved at notene blir scannet til PDF-fil(er), og filene organisert i en felles filstruktur. Denne samlingen med PDF-filer ligger da gjerne fysisk på en eller annen sin PC (i verste fall), eller i beste fall i en DropBox-mappe el.l.
+
+Dette kan gjøres mye mer effektivt og brukervennlig både for vedkommende som har ansvaret for arkivet, og for utøverne som skal hente ut sin stemme fra arkivet.
+
+I denne prosjektoppgave skal det utvikles et web-basert system for håndtering av noter. Systemet må kunne fungere på alle vanlige plattformer, inklusive smartmobiler og nettbrett (responsive design). Nedenfor følger typisk funksjonalitet et slik system bør ha, fordelt på to hovedroller; administrator (notearkivansvarlig) og bruker (utøver):
+
+Administrator (ansvarlig for Notearkivet):
+
+Når nytt notesett (ny låt) kjøpes, er dette oftest på papir form. Administrator vil da scanne originalene til PDF, gjerne 1 PDF-fil med alle stemmene og partitur, eller fordelt på flere PDF-filer (en fil med partitur, en med de øvrige instrumenter osv).
+
+Funksjoner:
+
+Kunne opprette et notesett i arkivet (databasen) med følgende informasjon
+Tittel
+Komponist(er) - her kan være flere, og disse bør lagres i egne tabeller slik at man f.eks. kan søke etter alle titler fra en bestemt komponist/tekstforfatter.
+Arrangør (som regel en). 
+Vanskelighetsgrad (valgfritt) - et tall fra 1 til 6 el.l., inklusive desimal (2,5  3,5 osv). Kan også være på formen “2-3”
+Varighet (mm:ss)
+Arkivnummer (manuellt lagt inn, representerer et nummer i det fysiske arkivet)
+Kommentar - fritekstfelt for kommentarer
+Kunne lagre PDF-filen/filer tilhørende notesettet registrert over
+Kunne søke på tittel, komponist, arragør, vanskelighetsgrad
+Kunne utføre avanserte søk: “alle notesett som inneholder “sommer” i tittel, av arrangør “Michael Brown” med vanskelighetsgrad høyere enn 3”
+Kunne dele opp en PDF-file til flere PDF-filer; en for hver stemme/instrument.
+PDF-filene skal lagres i en filstruktur på server, med lenke til filene fra databasen
+osv
+Bruker/Utøver:
+
+Skal kunne logge seg på med sin egen bruker.
+
+Pålogget skal vedkommende kunne søke etter noter basert på samme kriteriet som administrator, og hente/laste ned PDF-filen for sin stemme/sitt instrument. ]]></description>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="199" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <timeline><![CDATA[1]]></timeline>
+        <option id="color.recent"><![CDATA[#0000ff #ff0033]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="12" date="26" type="HOLIDAY"/>
+        <date year="2005" month="3" date="24" type="HOLIDAY"/>
+        <date year="2005" month="3" date="25" type="HOLIDAY"/>
+        <date year="2005" month="3" date="28" type="HOLIDAY"/>
+        <date year="2005" month="5" date="5" type="HOLIDAY"/>
+        <date year="2005" month="5" date="16" type="HOLIDAY"/>
+        <date year="2005" month="5" date="17" type="HOLIDAY"/>
+        <date year="2006" month="4" date="13" type="HOLIDAY"/>
+        <date year="2006" month="4" date="14" type="HOLIDAY"/>
+        <date year="2006" month="4" date="17" type="HOLIDAY"/>
+        <date year="2006" month="5" date="1" type="HOLIDAY"/>
+        <date year="2006" month="5" date="17" type="HOLIDAY"/>
+        <date year="2006" month="5" date="25" type="HOLIDAY"/>
+        <date year="2006" month="6" date="5" type="HOLIDAY"/>
+        <date year="2006" month="12" date="25" type="HOLIDAY"/>
+        <date year="2007" month="1" date="1" type="HOLIDAY"/>
+        <date year="2007" month="4" date="5" type="HOLIDAY"/>
+        <date year="2007" month="4" date="6" type="HOLIDAY"/>
+        <date year="2007" month="4" date="9" type="HOLIDAY"/>
+        <date year="2007" month="5" date="1" type="HOLIDAY"/>
+        <date year="2007" month="5" date="17" type="HOLIDAY"/>
+        <date year="2007" month="5" date="28" type="HOLIDAY"/>
+        <date year="2007" month="12" date="25" type="HOLIDAY"/>
+        <date year="2008" month="1" date="1" type="HOLIDAY"/>
+        <date year="2008" month="3" date="20" type="HOLIDAY"/>
+        <date year="2008" month="3" date="21" type="HOLIDAY"/>
+        <date year="2008" month="3" date="24" type="HOLIDAY"/>
+        <date year="2008" month="5" date="1" type="HOLIDAY"/>
+        <date year="2008" month="5" date="12" type="HOLIDAY"/>
+        <date year="2008" month="12" date="25" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="Forprosjektering" color="#ff0033" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" start="2017-01-11" duration="12" complete="0" priority="0" expand="true"/>
+        <task id="11" name="Møte med styringsgruppe." color="#0000ff" meeting="false" start="2017-01-12" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Notat kommer senere. ]]></notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Sindre Sjøholt" function="Default:0" contacts="sindre@sjoholt.net" phone="90777081"/>
+        <resource id="1" name="Gaute Hjellbakk Pettersen" function="Default:0" contacts="gaaute@hotmail.com" phone="46969590"/>
+        <resource id="2" name="Thomas Robert Tennøy" function="Default:0" contacts="thomas.tennoy@hotmail.com" phone="92439042"/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
