@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Web-basert notearkiv for korps og band. Bachelor 2017. " company="" webLink="http://" view-date="2017-01-05" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Web-basert notearkiv for korps og band. Bachelor 2017. " company="" webLink="http://" view-date="2017-02-12" view-index="2" gantt-divider-location="353" resource-divider-location="300" version="2.8.1" locale="en_US">
     <description><![CDATA[En stor utfordring i ethvert korps (barne/undom/voksen) og storband (og øvrige band for den del) er håndteringen av noter. Den vanligste måten å håndtere noter i dag på, er i form av papir som deles ut til musikerne/utøverne, og som så samles inn igjen når de ikke skal brukes lenger.
 
 Stadig flere korps og band begynner nå å håndtere sine notearkiv elektronisk ved at notene blir scannet til PDF-fil(er), og filene organisert i en felles filstruktur. Denne samlingen med PDF-filer ligger da gjerne fysisk på en eller annen sin PC (i verste fall), eller i beste fall i en DropBox-mappe el.l.
@@ -32,12 +32,12 @@ Bruker/Utøver:
 Skal kunne logge seg på med sin egen bruker.
 
 Pålogget skal vedkommende kunne søke etter noter basert på samme kriteriet som administrator, og hente/laste ned PDF-filen for sin stemme/sitt instrument. ]]></description>
-    <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Name" width="199" order="0"/>
-        <field id="tpd4" name="Begin date" width="75" order="1"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="207" order="0"/>
+        <field id="tpd4" name="Begin date" width="67" order="1"/>
         <field id="tpd5" name="End date" width="75" order="2"/>
         <timeline><![CDATA[1]]></timeline>
-        <option id="color.recent"><![CDATA[#0000ff #ff0033]]></option>
+        <option id="color.recent"><![CDATA[#33ff33 #cc0000 #0066ff #ff66ff #333300 #666600 #000000 #ccccff #ccffcc #ffff00]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -98,26 +98,85 @@ Pålogget skal vedkommende kunne søke etter noter basert på samme kriteriet so
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="1" name="Forprosjektering" color="#ff0033" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" start="2017-01-11" duration="12" complete="0" priority="0" expand="true"/>
-        <task id="11" name="Møte med styringsgruppe." color="#0000ff" meeting="false" start="2017-01-12" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Notat kommer senere. ]]></notes>
+        <task id="11" name="Møte med styringsgruppe." color="#0000ff" meeting="false" start="2017-01-18" duration="1" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Onsdag 18. Januar 2017. Kl.10.00 ]]></notes>
         </task>
-        <task id="12" name="Tankekart" color="#8cb6ce" meeting="false" start="2017-01-12" duration="1" complete="0" expand="true"/>
+        <task id="12" name="Tankekart" color="#33ff33" meeting="false" start="2017-01-13" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Tankekart laget. ]]></notes>
+        </task>
+        <task id="13" name="Design og skissering av database" color="#8cb6ce" meeting="false" start="2017-02-01" duration="1" complete="0" expand="true">
+            <depend id="45" type="2" difference="4" hardness="Strong"/>
+        </task>
+        <task id="17" name="Design og konfigurasjon av server" color="#ccccff" meeting="false" start="2017-02-02" duration="1" complete="0" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="19" name="Valg og konfigurasjon av server" color="#ccffcc" meeting="false" start="2017-02-03" duration="1" complete="0" expand="true"/>
+        <task id="29" name="Innsamling av data til arkiv-systemet" color="#ffff00" meeting="false" start="2017-02-06" duration="1" complete="0" expand="true"/>
+        <task id="35" name="Design og skissering av brukergrensesnitt til webapplikasjonen" color="#0000cc" meeting="false" start="2017-02-07" duration="1" complete="0" expand="true"/>
+        <task id="45" name="Generere database med innhold" color="#003333" meeting="false" start="2017-02-08" duration="5" complete="0" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="50" name="Initialiser og konfigurere server mot database" color="#666600" meeting="false" start="2017-02-15" duration="10" complete="0" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="75" name="Lage funksjonalitet for innsetting/uthenting av data i database og server" color="#990000" meeting="false" start="2017-03-01" duration="10" complete="0" expand="true">
+            <depend id="85" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="85" name="Utvikle back-end for administrator" color="#333300" meeting="false" start="2017-03-15" duration="5" complete="0" expand="true"/>
+        <task id="91" name="Utvikle brukergrensesnitt til applikasjonen" color="#8cb6ce" meeting="false" start="2017-03-22" duration="10" complete="0" expand="true"/>
+        <task id="93" name="Utvikle funksjonalitet som håndterer samhandling mellom applikasjon og informasjonssystem" color="#ff66ff" meeting="false" start="2017-04-05" duration="10" complete="0" expand="true"/>
+        <task id="95" name="Testing av webapplikasjon på flere plattformer" color="#0066ff" meeting="false" start="2017-04-19" duration="5" complete="0" expand="true"/>
+        <task id="97" name="Analysering av kode" color="#8cb6ce" meeting="false" start="2017-04-26" duration="5" complete="0" expand="true"/>
+        <task id="101" name="Systemdokumentasjon og rapporter" color="#cc0000" meeting="false" start="2017-05-08" duration="5" complete="0" expand="true">
+            <notes><![CDATA[Bachelorrapport! NOOOOOOOO nærma det sej gutta 
+]]></notes>
+        </task>
     </tasks>
     <resources>
-        <resource id="0" name="Sindre Sjøholt" function="Default:0" contacts="sindre@sjoholt.net" phone="90777081"/>
-        <resource id="1" name="Gaute Hjellbakk Pettersen" function="Default:0" contacts="gaaute@hotmail.com" phone="46969590"/>
-        <resource id="2" name="Thomas Robert Tennøy" function="Default:0" contacts="thomas.tennoy@hotmail.com" phone="92439042"/>
+        <resource id="0" name="Sindre Sjøholt" function="SoftwareDevelopment:3" contacts="sindre@sjoholt.net" phone="90777081"/>
+        <resource id="1" name="Gaute Hjellbakk Pettersen" function="Default:1" contacts="gaaute@hotmail.com" phone="46969590"/>
+        <resource id="2" name="Thomas Robert Tennøy" function="SoftwareDevelopment:2" contacts="thomas.tennoy@hotmail.com" phone="92439042"/>
     </resources>
     <allocations>
         <allocation task-id="1" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="75" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="91" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="93" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="1" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="11" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="12" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="75" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="91" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="93" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="11" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="12" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="75" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="91" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="93" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
     </allocations>
     <vacations/>
     <previous/>
